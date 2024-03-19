@@ -24,6 +24,18 @@
 
 }
 
+table {
+    table-layout:auto;
+
+    width: fit-content;
+}
+
+td {
+    white-space: nowrap;
+    padding:0 2rem 0 1rem;
+
+}
+
 html, body {
     color:var(--white);
     background-color:var(--black);
@@ -124,8 +136,7 @@ nav {
 }
 
 section {
-    #padding: 10rem 0;
-
+    /* padding: 10rem 0; */
 }
 
 .profile {
@@ -139,23 +150,81 @@ section {
 }
 
 .personal {
-    margin-top:5rem;
-    margin-left:5rem;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    background-color:var(--blue);
+    margin-top: 5rem;
+    margin-left: 5rem;
+    /*padding-top:5rem;
+    padding-left:5rem;*/
 
+    background-color: var(--black);
     height: calc(100% - 15rem);
-    width:25rem;
+    width: 25rem;
 
 }
 
+.personal-text {
+    position:absolute;
+    top: 28rem;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 20rem;
+
+    font-size: var(--fs-nav);
+    color: var(--black);
+
+}
+
+.personal-name {
+    text-align:center;
+
+}
+.personal-info {
+    text-align:center;
+
+}
+
+.personal-certs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.personal-certs > div {
+    margin: 1rem;
+
+}
+
+.personal-contact {
+    text-align:center;
+
+    font-size: var(--fs-proj-nav);
+
+}
+
+.personal-social {
+    text-align: center;
+
+}
+.spacer {
+    width:10%;
+
+}
 .portfolio {
     display:flex;
     flex-direction:column;
     align-items:flex-start;
 
     height:60%;
-    width: 100%;
+    max-width:calc(90%-25rem);
 
     margin:5rem;
 
@@ -172,7 +241,7 @@ section {
     align-items: center;
     gap: 6rem;
 
-    height: 4rem;
+    height: 10rem;
 
     margin-top:0.5rem;
     
@@ -192,19 +261,41 @@ section {
     height:100%;
     width:100%;
 
-    margin:5rem 0 0 0;
+    margin:5rem 5rem 5rem 0;
 
 }
 
 .project-tab {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
 
     min-height:100%;
     width:100%;
+    margin: 0 5rem 5rem 0;
 
     scroll-snap-align: start;
-    border:1px solid green;
+    
+}
+
+.project-descript {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    width:50rem;
+
+}
+
+.project-table {
+    font-size: var(--fs-nav);
+
+}
+
+.project-pic {
+    display:flex;
+
+    min-height: 100%;
+    width:50%;
 
 }
 
