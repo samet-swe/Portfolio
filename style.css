@@ -7,7 +7,6 @@
 
 *::-webkit-scrollbar {
     display:none;
-
 }
 
 :root {
@@ -21,7 +20,6 @@
     --fs-h8: 2.5rem;
     --fs-nav:2rem;
     --fs-proj-nav:1.5rem;
-
 }
 
 table {
@@ -33,7 +31,6 @@ table {
 td {
     white-space: nowrap;
     padding:0 2rem 0 1rem;
-
 }
 
 html, body {
@@ -44,7 +41,6 @@ html, body {
     font-size:62.5%; /* 10px base font size*/
 
     scroll-snap-type:y mandatory;
-
 }
 
 h4 {
@@ -66,7 +62,6 @@ h6 {
 
 .h8 {
     font-size: var(--fs-h8);
-
 }
 
 a {
@@ -87,13 +82,11 @@ header {
     background-position: center;
 
     scroll-snap-align:start;
-
 }
 
 .row {
     width: 90%;
     margin: 0 auto;
-
 }
 
 nav {
@@ -105,7 +98,6 @@ nav {
     height: 9rem;
 
     font-size: var(--fs-nav);
-
 }
 
 .header-text {
@@ -117,7 +109,6 @@ nav {
     height: calc(100% - 5rem);
     
     padding: 0 0 30rem 0;
-
 }
 
 .header-text h1 {
@@ -126,17 +117,11 @@ nav {
     height: 10rem;
     
     font-size:var(--fs-h1);
-    
 }
 
 .header-text p {
     font-size: 2.5rem;
     flex-basis:content;
-
-}
-
-section {
-    /* padding: 10rem 0; */
 }
 
 .profile {
@@ -146,7 +131,6 @@ section {
     width: 100%;
 
     scroll-snap-align:start;
-
 }
 
 .personal {
@@ -158,13 +142,10 @@ section {
 
     margin-top: 5rem;
     margin-left: 5rem;
-    /*padding-top:5rem;
-    padding-left:5rem;*/
 
     background-color: var(--black);
     height: calc(100% - 15rem);
     width: 25rem;
-
 }
 
 .personal-text {
@@ -179,45 +160,40 @@ section {
 
     font-size: var(--fs-nav);
     color: var(--black);
-
 }
 
 .personal-name {
     text-align:center;
-
 }
+
 .personal-info {
     text-align:center;
-
 }
 
 .personal-certs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .personal-certs > div {
     margin: 1rem;
-
 }
 
 .personal-contact {
     text-align:center;
 
     font-size: var(--fs-proj-nav);
-
 }
 
 .personal-social {
     text-align: center;
-
 }
+
 .spacer {
     width:10%;
-
 }
+
 .portfolio {
     display:flex;
     flex-direction:column;
@@ -227,12 +203,10 @@ section {
     max-width:calc(90%-25rem);
 
     margin:5rem;
-
 }
 
 .portfolio-title {
     height: 8.5rem;
-
 }
 
 .project-nav {
@@ -246,7 +220,6 @@ section {
     margin-top:0.5rem;
     
     font-size: var(--fs-proj-nav);
-
 }
 
 .project-section {
@@ -262,7 +235,6 @@ section {
     width:100%;
 
     margin:5rem 5rem 5rem 0;
-
 }
 
 .project-tab {
@@ -274,7 +246,6 @@ section {
     margin: 0 5rem 5rem 0;
 
     scroll-snap-align: start;
-    
 }
 
 .project-descript {
@@ -283,12 +254,10 @@ section {
 
     min-height: 100%;
     width:50rem;
-
 }
 
 .project-table {
     font-size: var(--fs-nav);
-
 }
 
 .project-pic {
@@ -296,7 +265,6 @@ section {
 
     min-height: 100%;
     width:50%;
-
 }
 
 .about-section {
@@ -305,7 +273,6 @@ section {
     justify-content:flex-start;
 
     scroll-snap-align:start;
-
 }
 
 .contact-section {
@@ -314,5 +281,4 @@ section {
     justify-content: flex-start;
 
     scroll-snap-align: start;
-
 }
