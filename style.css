@@ -12,14 +12,15 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --blue:  #67a1fe;
+    --blue: #67a1fe;
+    --bg-blue: #5A85B0;
     
     --fs-h1: 7.75rem;
     --fs-h4: 5.5rem;
     --fs-h6: 4rem;
     --fs-h8: 2.5rem;
-    --fs-nav:2rem;
-    --fs-proj-nav:1.5rem;
+    --fs-nav: 2rem;
+    --fs-proj-nav: 1.5rem;
 }
 
 table {
@@ -180,6 +181,36 @@ nav {
     margin: 1rem;
 }
 
+.tooltip {
+    position:relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    font-size: var(--fs-proj-nav);
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid var(--blue);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 185%;
+    margin-left: -60px;
+    background-color: var(--bg-blue);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 .personal-contact {
     text-align:center;
 
@@ -192,6 +223,11 @@ nav {
 
 .spacer {
     width:10%;
+}
+
+.v1 {
+    border: 1px solid var(--white);
+    height: 2rem;
 }
 
 .portfolio {
@@ -213,7 +249,7 @@ nav {
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 6rem;
+    gap: 3rem;
 
     height: 10rem;
 
@@ -234,7 +270,7 @@ nav {
     height:100%;
     width:100%;
 
-    margin:5rem 5rem 5rem 0;
+    margin:1rem;
 }
 
 .project-tab {
